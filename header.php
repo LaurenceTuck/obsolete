@@ -12,8 +12,8 @@
     </head>
 
     <body>
-        <div id="bg-main" class="bg"></div>
-        <div id="bg-slide" class="bg"></div>
+        <div class="bg main"></div>
+        <div class="bg slide"></div>
         <header>
             <div>
                 <h1 itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></h1>

@@ -1,0 +1,29 @@
+{
+  "name": "obsolete",
+  "version": "1.0.0",
+  "description": "A simple Wordpress theme",
+  "author": "Laurence Tuck",
+  "license": "GPL-3.0-or-later",
+  "keywords": [
+    "WordPress",
+    "Theme"
+  ],
+  "homepage": "https://github.com/LaurenceTuck/obsolete#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaurenceTuck/obsolete.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LaurenceTuck/obsolete/issues"
+  },
+  "scripts": {
+    "watch": "sass ./sass/:./css/ --style=expanded -w",
+    "compile:css": "sass ./sass/:./css/ --style=compressed"
+  },
+  "dependencies": {
+    "sass": "^1.49.7"
+  },
+  "engines": {
+    "node": "<=10"
+  }
+}
