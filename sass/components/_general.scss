@@ -1,8 +1,13 @@
 * {
-	font-family: $font-main;
+	font-family: $font-primary;
 	margin: 0 auto;
 }
 
 body {
     background-color: $bg-primary;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
 }

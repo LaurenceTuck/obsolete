@@ -1,19 +1,20 @@
 #nav-btn {
-	/* padding: 0; */
-	position: absolute;
-	top: 2.5rem;
-	right: 1.5rem;
-	padding-right: calc((100% - 1200px) / 2);
+    margin: 2.5rem 1.5rem;
 	fill: white;
 	-webkit-tap-highlight-color: transparent;
+
+    &:hover, &:active {
+		fill: $hover-color;
+        cursor: pointer;
+    }
 }
 
 body > header {
 	background-color: black;
 	color: white;
-	position: fixed;
-    width: min(100%, 1200px);
-	padding: 0 calc((100% - 1200px) / 2);
+	// position: fixed;
+    width: min(100%, $content-width);
+	padding: 0 calc((100% - $content-width) / 2);
     height: 7rem;
     z-index: 100;
     user-select: none;
@@ -24,6 +25,7 @@ body > header {
         font-weight: 500;
         padding: 1rem 1.5rem;
         margin: 0;
+        width: min-content;
     }
 
     nav {
@@ -64,9 +66,14 @@ body > header {
         a {
             padding: 1rem 1.5rem;
             display: block;
+            text-decoration: underline;
 
             @media only screen and (max-width: 999px) {
                 padding: 0.5rem 0.5rem;
+            }
+
+            &:hover, &:active {
+                color: $hover-color;
             }
         }
     }
